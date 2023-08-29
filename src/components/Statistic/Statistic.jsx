@@ -24,7 +24,7 @@ export const Statistic = ({
         Total: <span className={css.valueOfStat}>{countTotalFeedback()}</span>
       </p>
       <p className={css.statText}>
-        Positive feedback:{' '}
+        Positive feedback:
         <span className={css.valueOfStat}>{countPositiveFeedback()}</span>
       </p>
     </div>
