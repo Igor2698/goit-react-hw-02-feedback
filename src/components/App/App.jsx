@@ -31,7 +31,7 @@ export class App extends Component {
     const { good } = this.state;
     const totalFeedback = this.countTotalFeedback();
     return totalFeedback !== 0
-      ? ((good / this.countTotalFeedback()) * 100).toFixed(2) + '%'
+      ? ((good / this.countTotalFeedback()) * 100) + '%'
       : 0;
   };
 
