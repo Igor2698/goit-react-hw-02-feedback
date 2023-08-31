@@ -12,7 +12,7 @@ export class App extends Component {
 
   countFeedbacks = button =>
     this.setState(prevState => {
-      console.log([prevState]);
+    
       return { [button]: prevState[button] + 1 };
     });
 
