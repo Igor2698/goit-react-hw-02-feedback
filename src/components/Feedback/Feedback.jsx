@@ -10,7 +10,7 @@ const Feedback = ({ values, countFeedbacks }) => {
           className={css.button}
           onClick={() => countFeedbacks(value)}
         >
-          {value.charAt(0).toUpperCase() + value.slice(1)}
+          {value}
         </button>
       ))}
     </div>
