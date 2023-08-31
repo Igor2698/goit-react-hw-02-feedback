@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
-import { Notification } from '../Notification/Notification';
-import { Section } from 'components/Section/Section';
-import { Feedback } from 'components/Feedback/Feedback';
-import { Statistic } from 'components/Statistic/Statistic';
+import Notification from 'components/Notification';
+import Section from 'components/Section';
+import Feedback from 'components/Feedback';
+import Statistic from 'components/Statistic';
 export class App extends Component {
-  static defaultProps = {
+  state = {
     good: 0,
     neutral: 0,
     bad: 0,
-  };
-
-  state = {
-    good: this.props.good,
-    neutral: this.props.neutral,
-    bad: this.props.bad,
   };
 
   countFeedbacks = button =>

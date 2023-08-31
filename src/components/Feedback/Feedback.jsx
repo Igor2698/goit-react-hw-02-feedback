@@ -1,6 +1,7 @@
 import css from './Feedback.module.css';
+import PropTypes from 'prop-types';
 
-export const Feedback = ({ values, countFeedbacks }) => {
+const Feedback = ({ values, countFeedbacks }) => {
   return (
     <div className={css.buttonsContainer}>
       {values.map(value => (
@@ -14,4 +15,11 @@ export const Feedback = ({ values, countFeedbacks }) => {
       ))}
     </div>
   );
+};
+
+export default Feedback;
+
+Feedback.propTypes = {
+  values: PropTypes.arrayOf(PropTypes.string).isRequired,
+  countFeedbacks: PropTypes.func.isRequired,
 };
